@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:contentDescription="@string/user_icono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/user_icon" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+        <!-- Encabezado de la tabla -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="#D3D3D3"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/ID"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/product_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/titulo_edit"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <!-- Fila 1 -->
+        <TableRow>
+
+            <TextView
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/_1" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/producto_a" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/buton_register"
+                app:srcCompat="@drawable/edit_icono"
+                tools:ignore="ImageContrastCheck" />
+
+        </TableRow>
+
+        <!-- Fila 2 -->
+        <TableRow>
+
+            <TextView
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/_2" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/producto_b" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/buton_register"
+                app:srcCompat="@drawable/edit_icono"
+                tools:ignore="ImageContrastCheck" />
+
+        </TableRow>
+
+        <!-- Fila 3 -->
+        <TableRow>
+
+            <TextView
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/_3" />
+
+            <TextView
+                android:layout_width="215dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/producto_c" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/buton_register"
+                app:srcCompat="@drawable/edit_icono"
+                tools:ignore="ImageContrastCheck" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/buton_add_product"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="21dp"
+        android:contentDescription="@string/back_icono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_icon"
+        tools:ignore="ImageContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
